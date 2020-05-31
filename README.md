@@ -1,13 +1,13 @@
 # Length-Delimited Proto
 
-When protobuf messages are either across the wire, or put in intermediary storage, it is helpful to be able to read and write individual messages in a streaming format.
+When Protobuf messages are either across the wire, or put in intermediary storage, it is helpful to be able to read and write individual messages in a streaming format.
 
 This package exposes two methods:
 
-* `write_ld(writer, protomsg)` - writes one instance of a protobuf message to the stream
-* `read_ld(reader, msgtype) -> protomsg` - reads one protobuf message from the stream, using the type as the constructor
+* `write_ld(writer, protomsg)` - writes one length-delimited Protobuf message to a stream
+* `read_ld(reader, msgtype) -> protomsg` - returns an iterable that yields messages from the stream one by one.
 
-This package uses an unsigned 32-bit integer as the length-prefix.
+This package uses a big-endian unsigned 32-bit integer as the length-prefix.
 
 ## Example
 
