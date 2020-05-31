@@ -1,4 +1,4 @@
-from proto import simple_pb2 as pb
+import simple_pb2 as pb
 from ldproto import write_ld, read_ld
 
 user_addresses = {

@@ -1,4 +1,4 @@
-__version__ = '0.1.7'
+__version__ = '0.1.12'
 
 from .delimited import write_ld, read_ld
 
