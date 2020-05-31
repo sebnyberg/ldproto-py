@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ldproto"
-version = "0.1.10"
+version = "0.1.11"
 description = ""
 authors = ["Sebastian Nyberg <seb.nyberg90@gmail.com>"]
 readme = "README.md"
