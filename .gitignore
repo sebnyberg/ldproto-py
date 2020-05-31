@@ -1,0 +1,4 @@
+**/tmp*
+**/out*
+examples/**/__pycache__
+dist
