@@ -20,7 +20,7 @@ import myproto as pb
 # .ld is for length-delimited
 with open('out.user.ld', 'wb') as f:
     for user_id in ['Alice', 'Bob']:
-        write_ld(f, pb.User(id=user_id)
+        write_ld(f, pb.User(id=user_id))
 
 pb_users = []
 with open('out.user.ld', 'rb') as f:
