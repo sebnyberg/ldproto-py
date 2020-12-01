@@ -11,7 +11,7 @@ This package uses a big-endian unsigned 32-bit integer as the length-prefix.
 
 ## Example
 
-Assuming there is a protobuf message with the type name "User"
+Assuming there is a protobuf message with the type name "User".
 
 ```python
 from ldproto import read_ld, write_ld
