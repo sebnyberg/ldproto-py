@@ -25,7 +25,7 @@ with open('out.user.ld', 'wb') as f:
 pb_users = []
 with open('out.user.ld', 'rb') as f:
     for pb_user in read_ld(f, pb.User):
-        pb_users.append(user)
+        pb_users.append(pb_user)
 ```
 
 To write to / from a bytestream in-memory, use BytesIO in-place of the files in the example.
